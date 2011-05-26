@@ -18,7 +18,7 @@ Right click on any folder and you should see a New File option now like this:
 
 Click it, and voila, you haz new file! If you have a lot of Services already, the New File option will be under the Services right click fly out menu like this:
 
-![Services > New File](http://cl.ly/1Q182T1f0c0q1I3y2a0z/Screen_shot_2011-05-26_at_12.05.56_PM.png "Services > New File")
+![Services > New File](https://img.skitch.com/20110526-fniugmct8f182ighk9h34mu64k.jpg "Services > New File")
 
 ##What's Next
 
