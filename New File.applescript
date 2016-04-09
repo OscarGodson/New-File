@@ -5,17 +5,19 @@
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ####
 on run {input}
-    set theFolder to item 1 of input -- {input} is a list so we only use the first item in the list
-    tell application "Finder"
-        activate
-        set theFile to make new file at theFolder with properties {name:"untitled"}
-        set target of Finder window 1 to theFile
-    end tell
-
-    tell application "System Events"
-        tell process "Finder"
-            keystroke return
-        end tell
-    end tell
-    return input
+	try
+		tell application "Finder"
+			activate
+			set theFile to make new file at (item 1 of input) with properties {name:"New File"}
+		end tell
+		
+		tell application "System Events"
+			tell process "Finder"
+				keystroke return
+			end tell
+		end tell
+		return input
+	on error errMsg
+		display dialog errMsg
+	end try
 end run
