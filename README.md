@@ -1,9 +1,9 @@
-#New File Beta 1.0
-##What
+# New File Beta 1.0
+## What
 New File is simply an AppleScript Automator Workflow that enables a right click context menu option to allow you to create a new file and rename it all in one action.
-##Why
+## Why  
 New File isn't a default option on Mac, but it is on Windows and most Linux distros. There have been others who've done stuff like this, but they either open open modals, or are set with key commands and other unintuitive or intrusive methods. This is meant to be just like Windows and Linux.
-##Install
+## Install
 Amazingly simple.
 
 - Download the the source, or clone it
@@ -11,7 +11,7 @@ Amazingly simple.
 - Once it is open, press `cmd+s` or File > Save and save it as New File and press enter. 
 
 That's it.
-##How
+## How
 Right click on any folder and you should see a New File option now like this:
 
 Click it, and voila, you haz new file! If you have a lot of Services already, the New File option will be under the Services right click fly out menu like this:
